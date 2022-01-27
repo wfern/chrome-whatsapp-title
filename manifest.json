@@ -1,0 +1,16 @@
+{
+  "name": "WhatsApp Title Change",
+  "version": "1.0",
+  "permissions": ["tabs", "activeTab"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/"],
+      "js": ["content.js"]
+    }
+  ],
+  "manifest_version": 2
+}
